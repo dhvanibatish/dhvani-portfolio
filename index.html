@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Dhvani Batish — Business Analytics Student, Data Analyst & Problem Solver. Portfolio showcasing Power BI dashboards, automation workflows, and data-driven projects."/>
+  <title>dhvani.studio | Business Analyst & Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <div class="mouse-glow" id="mouse-glow"></div>
+
+  <!-- ── NAV ─────────────────────────────────────────────────── -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" id="nav-brand">dhvani<span class="brand-dot">.</span>studio</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"      id="nl-about">About</a></li>
+        <li><a href="#skills"     id="nl-skills">Skills</a></li>
+        <li><a href="#projects"   id="nl-projects">Projects</a></li>
+        <li><a href="#experience" id="nl-exp">Experience</a></li>
+        <li><a href="#contact"    id="nl-contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content">
+
+      <div class="hero-left" id="hero-left">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Open to Opportunities · George Brown College
+        </div>
+        <h1 class="hero-name" id="hero-name">
+          <span class="name-line">Dhvani</span>
+          <span class="name-line name-accent">Batish</span>
+        </h1>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <p class="hero-desc" id="hero-desc">
+          I turn raw business data into decisions that actually matter — through dashboards, automation, and insight-driven analysis.
+        </p>
+        <div class="hero-actions" id="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="btn-projects">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            View Projects
+          </a>
+          <a href="resume.pdf" class="btn btn-glass" id="btn-resume" download="Dhvani_Batish_Resume.pdf">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline" id="btn-contact-hero">Contact Me</a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="hstat"><span class="hstat-val">4+</span><span class="hstat-label">Projects</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-val">6+</span><span class="hstat-label">Tools</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-val">3</span><span class="hstat-label">Years Study</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right" id="hero-right">
+        <div class="profile-ring-outer">
+          <div class="profile-ring-mid">
+            <div class="profile-card">
+              <img src="avatar.png" alt="Dhvani Batish" class="profile-img" id="profile-img"/>
+              <div class="profile-badge-card">
+                <span class="pbc-icon">📊</span>
+                <div>
+                  <strong>BBA Analytics</strong>
+                  <span>George Brown College</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orbit-pill pill-1">Power BI</div>
+        <div class="orbit-pill pill-2">N8N</div>
+        <div class="orbit-pill pill-3">Zoho CRM</div>
+        <div class="orbit-pill pill-4">Excel</div>
+        <div class="orbit-pill pill-5">Analytics</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-split">
+        <!-- Left: Bold statement like the reference site -->
+        <div class="about-statement reveal" id="about-left">
+          <span class="section-tag" style="margin-bottom:20px;display:inline-block">About Me</span>
+          <h2 class="about-headline">
+            I turn business data into decisions that <span class="text-glow">actually matter.</span>
+          </h2>
+          <p class="about-body">
+            I'm a Business Analytics student at <strong>George Brown College, Toronto</strong> — combining analytical thinking with real-world automation experience. I've built end-to-end automation workflows, CRM integrations, and interactive dashboards that help businesses move faster and smarter.
+          </p>
+          <p class="about-body">
+            My work starts with understanding the business problem first — then I build the data pipeline, dashboard, or workflow that solves it cleanly.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:28px;width:fit-content" id="about-cta">
+            Start a conversation
+          </a>
+        </div>
+        <!-- Right: Photo + chips -->
+        <div class="about-right reveal" id="about-right">
+          <div class="about-photo-wrap">
+            <img src="avatar.png" alt="Dhvani Batish" class="about-photo"/>
+            <div class="about-photo-glow"></div>
+          </div>
+          <div class="about-chips">
+            <span>🎯 Analytical Thinker</span>
+            <span>🔗 Systems Integrator</span>
+            <span>📊 Data Storyteller</span>
+            <span>📈 BI Specialist</span>
+            <span>⚙️ Automation Builder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────────── -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills <span class="text-glow">Dashboard</span></h2>
+        <p class="section-sub">Click any skill to explore related projects ↓</p>
+      </div>
+
+      <!-- Skill filter hint -->
+      <div class="skill-hint reveal" id="skill-hint" style="display:none">
+        <span id="skill-hint-text">Showing projects for: <strong id="skill-filter-name"></strong></span>
+        <button id="clear-filter" onclick="clearSkillFilter()">✕ Show all</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+
+        <div class="skill-card reveal" id="sk-excel" data-skill="excel" data-projects="proj-3" onclick="filterBySkill(this,'Excel','proj-3')" tabindex="0" role="button" aria-label="Excel - click to see projects">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">📊</div>
+          <h4>Excel</h4>
+          <p>Advanced formulas, pivot tables, Power Query, data modelling</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-pbi" data-skill="powerbi" data-projects="proj-3" onclick="filterBySkill(this,'Power BI','proj-3')" tabindex="0" role="button" aria-label="Power BI - click to see projects">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">📈</div>
+          <h4>Power BI</h4>
+          <p>DAX, interactive dashboards, KPI reporting, real-time analytics</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-dv" data-skill="dataviz" data-projects="proj-3 proj-1 proj-2 proj-4" onclick="filterBySkill(this,'Data Visualisation','proj-3 proj-1 proj-2 proj-4')" tabindex="0" role="button">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">🎨</div>
+          <h4>Data Visualisation</h4>
+          <p>Charts, dashboards, business reporting, storytelling with data</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-ba" data-skill="bizanalytics" data-projects="proj-1 proj-2 proj-3 proj-4" onclick="filterBySkill(this,'Business Analytics','proj-1 proj-2 proj-3 proj-4')" tabindex="0" role="button">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">💼</div>
+          <h4>Business Analytics</h4>
+          <p>KPI analysis, process mapping, business case development</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="87"></div></div>
+          <span class="skill-pct">87%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-n8n" data-skill="n8n" data-projects="proj-1 proj-2 proj-4" onclick="filterBySkill(this,'N8N Automation','proj-1 proj-2 proj-4')" tabindex="0" role="button">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">⚙️</div>
+          <h4>N8N Automation</h4>
+          <p>Workflow automation, process design, API orchestration</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="93"></div></div>
+          <span class="skill-pct">93%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-zoho" data-skill="zoho" data-projects="proj-1 proj-2 proj-4" onclick="filterBySkill(this,'Zoho CRM','proj-1 proj-2 proj-4')" tabindex="0" role="button">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">🔗</div>
+          <h4>Zoho Ecosystem</h4>
+          <p>Zoho CRM, Books, Forms, Analytics — full-suite integrations</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="91"></div></div>
+          <span class="skill-pct">91%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-dd" data-skill="dashboard" data-projects="proj-3" onclick="filterBySkill(this,'Dashboard Design','proj-3')" tabindex="0" role="button">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">🖥️</div>
+          <h4>Dashboard Design</h4>
+          <p>UX-driven analytics UI, executive reporting, BI interfaces</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card reveal" id="sk-api" data-skill="api" data-projects="proj-1 proj-4" onclick="filterBySkill(this,'REST APIs','proj-1 proj-4')" tabindex="0" role="button">
+          <div class="skill-click-hint">Click to see projects →</div>
+          <div class="skill-icon">🌐</div>
+          <h4>REST APIs & Webhooks</h4>
+          <p>API integration, webhook automation, data pipeline design</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+
+      </div>
+
+      <div class="tools-row reveal">
+        <div class="tool-pill">N8N</div>
+        <div class="tool-pill">Zoho CRM</div>
+        <div class="tool-pill">Zoho Books</div>
+        <div class="tool-pill">REST APIs</div>
+        <div class="tool-pill">Webhooks</div>
+        <div class="tool-pill">Zoho Analytics</div>
+        <div class="tool-pill">MS Office Suite</div>
+        <div class="tool-pill">Power Query</div>
+        <div class="tool-pill">SAS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────────────── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="text-glow">Projects</span></h2>
+        <p class="section-sub" id="projects-subtitle">Real-world solutions I've designed and implemented</p>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card project-featured reveal" id="proj-1" data-tags="n8n zoho bizanalytics dataviz api">
+          <div class="proj-glow"></div>
+          <div class="proj-header">
+            <div class="proj-num">01</div>
+            <div class="proj-icon-wrap">⚙️</div>
+          </div>
+          <h3 class="proj-title">Zoho CRM & Invoice Automation System</h3>
+          <p class="proj-desc">Developed a fully automated workflow connecting Zoho Bigin CRM with Zoho Books for automatic invoice generation after deal confirmation. Webhook-based automation syncs customer data, sales, and payments in real time — zero manual effort.</p>
+          <div class="proj-impacts">
+            <div class="proj-impact"><span>✅</span> Zero manual invoicing</div>
+            <div class="proj-impact"><span>⚡</span> Real-time data sync</div>
+            <div class="proj-impact"><span>🎯</span> 100% data accuracy</div>
+          </div>
+          <div class="proj-stack">
+            <span>N8N</span><span>Zoho Bigin CRM</span><span>Zoho Books</span><span>REST APIs</span><span>Webhooks</span>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="proj-btn">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="proj-btn proj-btn-outline">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-2" data-tags="n8n zoho bizanalytics dataviz">
+          <div class="proj-glow"></div>
+          <div class="proj-header">
+            <div class="proj-num">02</div>
+            <div class="proj-icon-wrap">🚀</div>
+          </div>
+          <h3 class="proj-title">Customer Onboarding Automation</h3>
+          <p class="proj-desc">Built a fully automated onboarding system — form submissions instantly transferred to CRM and accounting with automated notifications and smart lead assignment workflows. Cut manual data entry to zero.</p>
+          <div class="proj-impacts">
+            <div class="proj-impact"><span>📧</span> Auto notifications</div>
+            <div class="proj-impact"><span>⏱️</span> Faster onboarding</div>
+          </div>
+          <div class="proj-stack">
+            <span>Zoho Forms</span><span>Zoho Bigin CRM</span><span>N8N</span>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="proj-btn">GitHub</a>
+            <a href="#" class="proj-btn proj-btn-outline">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-3" data-tags="excel powerbi dataviz bizanalytics dashboard">
+          <div class="proj-glow"></div>
+          <div class="proj-header">
+            <div class="proj-num">03</div>
+            <div class="proj-icon-wrap">📊</div>
+          </div>
+          <h3 class="proj-title">Business Analytics Dashboard</h3>
+          <p class="proj-desc">Designed interactive Power BI dashboards tracking sales performance, customer trends, operational KPIs, and revenue insights. Automated data visualisation and dashboard updates — decisions made faster, with confidence.</p>
+          <div class="proj-impacts">
+            <div class="proj-impact"><span>📈</span> Real-time KPI tracking</div>
+            <div class="proj-impact"><span>💡</span> Data-driven decisions</div>
+          </div>
+          <div class="proj-stack">
+            <span>Power BI</span><span>Zoho Analytics</span><span>MS Excel</span>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="proj-btn">GitHub</a>
+            <a href="#" class="proj-btn proj-btn-outline">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-4" data-tags="api n8n zoho bizanalytics dataviz">
+          <div class="proj-glow"></div>
+          <div class="proj-header">
+            <div class="proj-num">04</div>
+            <div class="proj-icon-wrap">🔗</div>
+          </div>
+          <h3 class="proj-title">Multi-Platform API Integration</h3>
+          <p class="proj-desc">Integrated third-party apps with Zoho tools using API-based automation workflows. Developed secure, scalable data sync between CRM, accounting, and analytics platforms — reducing repetitive ops through smart automation.</p>
+          <div class="proj-impacts">
+            <div class="proj-impact"><span>🔒</span> Secure integrations</div>
+            <div class="proj-impact"><span>♾️</span> Scalable systems</div>
+          </div>
+          <div class="proj-stack">
+            <span>REST APIs</span><span>Webhooks</span><span>N8N</span><span>Zoho Ecosystem</span>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="proj-btn">GitHub</a>
+            <a href="#" class="proj-btn proj-btn-outline">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE & CERTIFICATIONS ───────────────────────────── -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience & <span class="text-glow">Certifications</span></h2>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-timeline">
+          <div class="exp-item reveal" id="exp-1">
+            <div class="exp-milestone">
+              <div class="exp-dot exp-dot-lg"></div>
+              <div class="exp-line"></div>
+            </div>
+            <div class="glass-card exp-card">
+              <div class="exp-top">
+                <div>
+                  <span class="exp-badge">Current · Internship</span>
+                  <h3 class="exp-role">Business Analyst & Automation Expert</h3>
+                </div>
+                <div class="exp-meta"><span>2024 – Present</span></div>
+              </div>
+              <ul class="exp-list">
+                <li>Designed advanced automation workflows using <strong>N8N</strong>, significantly reducing manual tasks</li>
+                <li>Automated complete customer onboarding integrating <strong>Zoho Forms</strong>, <strong>CRM</strong> &amp; <strong>Books</strong></li>
+                <li>Built end-to-end data pipelines using <strong>REST APIs</strong> and <strong>webhooks</strong></li>
+                <li>Created interactive dashboards in <strong>Zoho Analytics</strong> and <strong>Power BI</strong></li>
+                <li>Collaborated with cross-functional teams to implement automation-driven solutions</li>
+              </ul>
+              <div class="exp-tags">
+                <span>N8N</span><span>Zoho CRM</span><span>Power BI</span><span>REST APIs</span><span>Webhooks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card reveal" id="cert-1">
+            <div class="cert-icon">🏆</div>
+            <div class="cert-body"><strong>Power BI Certification</strong><span>Microsoft · Data Analytics</span></div>
+            <div class="cert-glow"></div>
+          </div>
+          <div class="cert-card reveal" id="cert-2">
+            <div class="cert-icon">📜</div>
+            <div class="cert-body"><strong>SAS Programming Module</strong><span>SAS · Statistical Analysis</span></div>
+            <div class="cert-glow"></div>
+          </div>
+          <div class="cert-card reveal" id="cert-3">
+            <div class="cert-icon">🎓</div>
+            <div class="cert-body"><strong>BBA Analytics</strong><span>George Brown College, Toronto</span></div>
+            <div class="cert-glow"></div>
+          </div>
+          <div class="cert-card reveal" id="cert-4">
+            <div class="cert-icon">🛠️</div>
+            <div class="cert-body"><strong>Workshops & Training</strong><span>Data Visualisation · BI Tools</span></div>
+            <div class="cert-glow"></div>
+          </div>
+          <div class="cert-card reveal" id="cert-5">
+            <div class="cert-icon">🔄</div>
+            <div class="cert-body"><strong>N8N Workflow Automation</strong><span>Process Automation · APIs</span></div>
+            <div class="cert-glow"></div>
+          </div>
+          <div class="cert-card reveal" id="cert-6">
+            <div class="cert-icon">📊</div>
+            <div class="cert-body"><strong>Zoho Analytics Suite</strong><span>CRM · Books · Forms · Analytics</span></div>
+            <div class="cert-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────────────────── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="text-glow">Touch</span></h2>
+        <p class="section-sub">I'm always open to new opportunities and collaborations</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal" id="contact-info">
+          <div class="contact-avail">
+            <span class="avail-dot"></span>
+            <span>Available for internships, part-time roles &amp; freelance projects</span>
+          </div>
+          <p class="contact-intro">
+            Whether you have a data challenge, a project idea, or just want to chat about analytics — I'd love to hear from you!
+          </p>
+          <div class="contact-links">
+            <a href="tel:+91XXXXXXXXXX" class="contact-link" id="clink-phone">
+              <div class="clink-icon">📱</div>
+              <div>
+                <span class="clink-label">Phone</span>
+                <span class="clink-val">+91 XXXXX XXXXX</span>
+              </div>
+              <svg class="clink-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="mailto:dhvanibatish16@gmail.com" class="contact-link" id="clink-email">
+              <div class="clink-icon">📧</div>
+              <div>
+                <span class="clink-label">Email</span>
+                <span class="clink-val">dhvanibatish16@gmail.com</span>
+              </div>
+              <svg class="clink-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/dhvani-batish-618377293" target="_blank" class="contact-link" id="clink-li">
+              <div class="clink-icon">💼</div>
+              <div>
+                <span class="clink-label">LinkedIn</span>
+                <span class="clink-val">Dhvani Batish</span>
+              </div>
+              <svg class="clink-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="resume.pdf" class="contact-link" id="clink-resume" download="Dhvani_Batish_Resume.pdf">
+              <div class="clink-icon">📄</div>
+              <div>
+                <span class="clink-label">Resume</span>
+                <span class="clink-val">Download PDF</span>
+              </div>
+              <svg class="clink-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contact-form" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" placeholder="your@email.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-subject">Subject</label>
+            <input type="text" id="f-subject" placeholder="Job Opportunity / Project / Collaboration"/>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span id="submit-label">Send Message</span>
+          </button>
+          <div class="form-success" id="form-success">
+            🎉 Thanks! Dhvani will get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">dhvani<span class="brand-dot">.</span>studio</div>
+        <p class="footer-tagline">Business Analytics · Data Analysis · Automation</p>
+        <div class="footer-links">
+          <a href="mailto:dhvanibatish16@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/dhvani-batish-618377293" target="_blank">LinkedIn</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <p class="footer-copy">© 2025 dhvani.studio · Crafted with passion for data &amp; design</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
